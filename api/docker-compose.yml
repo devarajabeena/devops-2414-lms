@@ -14,9 +14,9 @@ services:
     build: .
     environment:
       - MODE=local
-      - PORT=8081
+      - PORT=3000
       - DATABASE_URL=postgresql://postgres:itjustworks@local-db:5432/mydb
     ports:
-      - "8081:8081"
+      - "3000:3000"
     depends_on:
       - local-db
