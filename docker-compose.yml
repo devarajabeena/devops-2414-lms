@@ -18,10 +18,10 @@ services:
     build: api/
     environment:
       - MODE=local
-      - PORT=8080
+      - PORT=8081
       - DATABASE_URL=postgresql://postgres:itjustworks@local-db:5432/mydb
     ports:
-      - "8080:8080"
+      - "8081:8081"
     restart: on-failure
     depends_on:
       - local-db
